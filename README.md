@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://brunobarros.dev">
+    <img alt="Bruno's Logo" src="https://brunobarros.dev/img/favicon.png" width="128" />
+  </a>
+</p>
+<h3 align="center">👋 Hi! I'm Bruno Barros</h2>
+<p align="center">A Web Developer</p>
 
-## Getting Started
+![Bruno Barros Site Preview](./public/img/web_demo.png)
 
-First, run the development server:
+*Obs: If you are using this site or any of it's components for your own portfolio site, I would be very grateful if you could give some credits to me in your footer*
+
+## :rocket: Quick start
+
+**Run the site locally**
+
+### Step 1: Clone The Repo
+
+Fork the repository. then clone the repo locally by doing -
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/bobarros/bruno-web.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+cd into the directory
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+cd bruno-app-router
+```
 
-## Learn More
+install all the dependencies
+```bash
+yarn install
+or
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Step 3: Start Development Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then start the development Server
+```
+yarn dev or npm run dev
+```
+After running the development server the site should be running on https://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## :open_file_folder: What's inside?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A quick look at the folder structure of this project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ├── pages
+    ├── public
+         ├───fonts
+         ├───img
+         └───pdf
+         └───svg
+    └── src
+        ├───components
+        ├───layouts
+        ├───pagesTrees
+        ├───sections
+        ├───styles
+        └───svg
+
+## Tools Used
+
+**1.** Next.js \
+**2.** Typescript
+
+## Components
+
+Components directory have both typescript and js files.
+
+## :v: Reach me
+
+Feel free to tell me about errors or improvements.
