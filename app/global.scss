@@ -71,18 +71,8 @@ body {
   line-height: 1.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: "LibreBaskerville";
   background-image: linear-gradient(#ffffff, #ffffff);
   background-color: var(--color-background-light-1);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "JetBrains Mono";
 }
 
 .container-principal {
@@ -231,11 +221,6 @@ h6 {
   @media only screen and (max-width: 700px) {
     display: block;
   }
-}
-
-.neymar * {
-  font-family: Avenir, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial,
-    sans-serif !important;
 }
 
 ////////////////////////// Animations

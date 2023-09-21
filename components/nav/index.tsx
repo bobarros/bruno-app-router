@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 
-// Styled Components
-
+// Styles
 import styles from "@/components/nav/style.module.scss";
 
 // Icons
