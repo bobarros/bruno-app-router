@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   },
   {
     href: "/contact",
-    children: "Portfolio",
+    children: "Contact",
   },
 ];
 

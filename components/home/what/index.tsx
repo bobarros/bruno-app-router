@@ -7,6 +7,9 @@ import styles from "@/components/home/style.module.scss";
 // Local Components
 import ImageHandle from "@/components/home/what/image-handle";
 
+// Fonts
+import { jetBrain } from "@/app/fonts";
+
 /*--------------------------------------------------------------------*/
 
 /**
@@ -17,7 +20,9 @@ const What = () => {
   return (
     <section className={styles.whatSection}>
       <div className={styles.textBlock}>
-        <h2 className={styles.initialText}>How can I help you?</h2>
+        <h2 className={`${styles.initialText} ${jetBrain.className}`}>
+          How can I help you?
+        </h2>
         <p className={styles.paragraph}>
           Curious about what I&apos;m working on or did in the past?
         </p>

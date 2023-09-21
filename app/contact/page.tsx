@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 
 import styles from "./styles.module.scss";
 
+// Fonts
+import { jetBrain } from "@/app/fonts";
+
 /*--------------------------------------------------------------------*/
 
 /**
@@ -39,7 +42,7 @@ export default function Contact() {
   return (
     <section className={styles.wrap}>
       <div className={styles.textBlock}>
-        <h1 className={styles.headTitle}>Contact</h1>
+        <h1 className={`${styles.headTitle} ${jetBrain.className}`}>Contact</h1>
         <p className={styles.paragraph}>
           I organize my time in a way that makes it possible to achieve maximum
           productivity.

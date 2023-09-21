@@ -1,0 +1,197 @@
+.wait {
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-font);
+  box-shadow: 0 5px 20px 5px var(--shadow);
+  padding-bottom: 4rem;
+
+  &:nth-child(even) {
+    background-color: var(--color-background-light-1);
+  }
+}/*
+
+export const TextBlock = styled.div`
+  padding: 0rem 0rem 4rem 0rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 60rem;
+
+  @media only screen and (max-width: 700px) {
+    padding: 8rem 1.5rem 4rem 1.5rem;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+`;
+
+export const TitleSub = styled.h2`
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  padding: 3rem 0;
+  font-weight: 700;
+`; */
+
+.pageName {
+  font-size: 5rem;
+  line-height: 10rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+/*
+export const LevelName = styled.p`
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+`;
+
+export const ImageProject = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+
+  img {
+    width: 50rem;
+    height: 33rem;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 5rem;
+    border-radius: 5px 5px 5px 5px;
+
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+      height: auto;
+    }
+  }
+`;
+ */
+.paragraph {
+  padding-bottom: 2rem;
+  opacity: var(--font-opacity);
+  a,
+  a:visited,
+  a:link {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  & span {
+    font-weight: 700;
+  }
+
+  svg {
+    width: 30rem;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  img {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+/*
+export const DescriptionProject = styled.p`
+  text-align: left;
+  padding-bottom: 1.5rem;
+`;
+
+export const LineBreakPj = styled.div`
+  width: 50%;
+  height: 0;
+  border-bottom: 1px solid var(--color-font);
+  margin: 3.5rem auto 4.5rem auto;
+`;
+
+export const Estimation = styled.div`
+  margin-bottom: 4rem;
+  span {
+    font-weight: 700;
+  }
+`;
+
+export const ImgAchor = styled.a`
+  font-size: 0;
+`; */
+
+.skillsBlock {
+  padding: 8rem 0rem 4rem 0rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 60rem;
+
+  @media only screen and (max-width: 700px) {
+    padding: 8rem 1.5rem 4rem 1.5rem;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+}
+
+.centerParagraph {
+  text-align: center;
+}
+
+.portfolioCard {
+  margin: 0 auto;
+  padding: 2rem;
+  margin-bottom: 6rem;
+  border-bottom: 1px solid var(--color-font);
+
+  img {
+    width: 450px;
+    height: 270px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    display: block;
+
+    @media only screen and (max-width: 520px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.portfolioCardData {
+  text-align: center;
+  padding-top: 2rem;
+
+  p {
+    opacity: var(--font-opacity);
+    font-weight: 400;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+
+.portfolioCardTitle {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.portfolioCardDescription {
+  margin: 2rem 0 1.2rem 0;
+}
+
+.portfolioLink {
+  margin-top: 2rem;
+}
+

@@ -15,6 +15,9 @@ import MongoSVG from "@/svg/MongoSVG";
 import NextSVG from "@/svg/NextSVG";
 import PhotoShopSVG from "@/svg/PhotoShopSVG";
 
+// Fonts
+import { jetBrain } from "@/app/fonts";
+
 /*--------------------------------------------------------------------*/
 
 /**
@@ -25,7 +28,7 @@ const How = () => {
   return (
     <section className={styles.howSection}>
       <div className={styles.textBlock}>
-        <h2 className={styles.initialText}>The cards up my sleeve</h2>
+        <h2 className={`${styles.initialText} ${jetBrain.className}`}>The cards up my sleeve</h2>
         <div className={styles.solutions}>
           <div className={styles.group}>
             <div className={styles.groupIcons}>
