@@ -1,0 +1,318 @@
+.night {
+  --color-font: #efefef;
+  --color-background: #121212;
+  --color-background-light-1: #323232;
+  --font-opacity: 0.8;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --btn-font: #121212;
+  --btn-background: #efefef;
+  --footer-background: #343434;
+  --nav-background: rgba(255, 255, 255, 0.2);
+  --hash-habilidades: rgb(37, 37, 165);
+}
+
+.day {
+  --color-font: #121212;
+  --color-background: #ffffff;
+  --color-background-light-1: #ededed;
+  --font-opacity: 0.95;
+  --shadow: #121212;
+  --btn-font: #efefef;
+  --btn-background: #121212;
+  --footer-background: #dedede;
+  --nav-background: rgba(0, 0, 0, 0.2);
+  --hash-habilidades: rgb(56, 56, 211);
+}
+
+
+// CSS Base
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 67.5%;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 350px) {
+    font-size: 48%;
+  }
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "LibreBaskerville";
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-color: var(--color-background-light-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "JetBrains Mono";
+}
+
+.container-principal {
+  margin: 0 auto;
+  background-color: var(--color-background-light-1);
+  color: var(--color-font);
+}
+
+@media only print {
+  @page {
+    size: auto;
+    margin: 10mm 15mm 20mm 15mm;
+  }
+
+  .nao-imprimir {
+    display: none !important;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-artigo {
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  .header-artigo {
+    padding: 2rem 0 2rem 0;
+    display: block;
+  }
+
+  .corpo-artigo {
+    padding: 0;
+  }
+
+  .corpo-artigo__bloco {
+    page-break-inside: avoid;
+  }
+
+  .corpo-artigo__texto--subtitulo {
+    padding: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: #000;
+  width: 4px;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: none;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: none;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+#lua {
+  opacity: 0;
+  fill: #efefef;
+  position: relative;
+  right: -1rem;
+}
+
+#sol {
+  opacity: 0;
+  position: relative;
+  right: -4rem;
+}
+
+.show {
+  animation-name: toAppear;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes toAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-360deg);
+  }
+}
+
+.notShow {
+  animation-name: toDisappear;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes toDisappear {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0);
+  }
+}
+
+.imageDesktop {
+  display: block;
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.imageMobile {
+  display: none;
+  @media only screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.neymar * {
+  font-family: Avenir, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial,
+    sans-serif !important;
+}
+
+////////////////////////// Animations
+
+////Nav
+
+.moveUpAnimated {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, 4px);
+  }
+  span:nth-child(2) {
+    display: none;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+  }
+}
+
+.moveUpNavBox {
+  bottom: calc(100% - 10rem) !important;
+}
+
+#propImage {
+  object-fit: cover;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.toBlink {
+  animation-name: blinking;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes blinking {
+  15% {
+    opacity: 0.15;
+  }
+  21% {
+    opacity: 0.05;
+  }
+  30% {
+    opacity: 0.25;
+  }
+  35% {
+    opacity: 0.05;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.08;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cabeca {
+  transform-origin: center;
+  transform: rotate3d(1, 1, 1, 0deg) translate(0, 0);
+  transition: all 0.4s;
+}
+
+.cabecaRotate {
+  transform: rotate3d(1, 1, 1, 20deg) translate(18px, 3px) !important;
+}
+
+.nightDireito {
+  transform-origin: center;
+  transform-box: fill-box;
+  transform: scale3d(0.8, 1.1, 1);
+}
