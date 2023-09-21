@@ -1,8 +1,39 @@
+// Next
+import type { Metadata } from "next";
+
 // Styles
 
 import styles from "./styles.module.scss";
 
-// Page
+/*--------------------------------------------------------------------*/
+
+/**
+ * Page
+ */
+
+export const metadata: Metadata = {
+  title: "Contact - Bruno Barros",
+  description: "What you need to know about Bruno Barros",
+  keywords: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Jamstack websites",
+    "Software engineer",
+    "Bruno Barros",
+    "Online interfaces",
+  ],
+  authors: [{ name: "Bruno Barros", url: "https://github.com/bobarros" }],
+  openGraph: {
+    type: "website",
+    url: "https://brunobarros.dev/contact",
+    title: "brunobarros.dev",
+    description: "What you need to know about Bruno Barros",
+    siteName: "brunobarros.dev",
+    images: [{ url: "/img/favicon.png", width: 128, height: 128 }],
+  },
+};
 
 export default function Contact() {
   return (
