@@ -37,7 +37,7 @@ const LinkMobile = ({ href, children, className }: Props) => {
 };
 
 // Content
-import NAV_ITEMS from "@/components/nav/content";
+import NAV_ITEMS from "@/content/nav";
 
 /*--------------------------------------------------------------------*/
 
@@ -48,7 +48,7 @@ import NAV_ITEMS from "@/components/nav/content";
 const LinkMobileItems = () => {
   const pathname = usePathname();
   return (
-    <div className={styles.menuMobile}>
+    <ul className={styles.menuMobile}>
       {NAV_ITEMS.map((item, index) => {
         const { href, children } = item;
         return (
@@ -61,7 +61,7 @@ const LinkMobileItems = () => {
           </LinkMobile>
         );
       })}
-    </div>
+    </ul>
   );
 };
 

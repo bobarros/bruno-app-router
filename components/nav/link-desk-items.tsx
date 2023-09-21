@@ -34,7 +34,7 @@ const LinkDesk = ({ href, children, className }: Props) => {
 };
 
 // Content
-import NAV_ITEMS from "@/components/nav/content";
+import NAV_ITEMS from "@/content/nav";
 
 /*--------------------------------------------------------------------*/
 
@@ -45,7 +45,7 @@ import NAV_ITEMS from "@/components/nav/content";
 const LinkDeskItems = () => {
   const pathname = usePathname();
   return (
-    <div className={styles.links}>
+    <ul className={styles.links}>
       {NAV_ITEMS.map((item, index) => {
         const { href, children } = item;
         return (
@@ -58,7 +58,7 @@ const LinkDeskItems = () => {
           </LinkDesk>
         );
       })}
-    </div>
+    </ul>
   );
 };
 

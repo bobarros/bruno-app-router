@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 import { ReactNode } from "react";
 
 // Local Components
-/* import Footer from "@/components/footer/Footer"; */
+import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 
 /*--------------------------------------------------------------------*/
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Nav />
         <main className="container-principal">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
