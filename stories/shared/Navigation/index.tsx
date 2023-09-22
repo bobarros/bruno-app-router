@@ -1,12 +1,10 @@
 // Next
-
 import Link from "next/link";
 
 // Styles
-import styles from "@/components/nav/style.module.scss";
+import styles from "./style.module.scss";
 
 // Icons
-
 import GitSVG from "@/svg/GitSVG";
 import EmailSVG from "@/svg/EmailSVG";
 import LogoSVG from "@/svg/LogoSVG";
@@ -14,10 +12,9 @@ import LogoSVG from "@/svg/LogoSVG";
 // Local Components
 import Logo from "@/components/logo";
 import Night from "@/components/night";
-import ToTop from "@/components/to-top";
-import LinkDeskItems from "@/components/nav/link-desk-items";
-import LinkMobileItems from "@/components/nav/link-mobile-items";
-import Hamburguer from "@/components/nav/hamburguer";
+import LinkDeskItems from "./link-desk-items";
+import LinkMobileItems from "./link-mobile-items";
+import Hamburguer from "./hamburguer";
 
 /*--------------------------------------------------------------------*/
 
@@ -30,7 +27,6 @@ const Nav = () => {
     <>
       <Night />
       <Logo />
-      <ToTop />
       <div className={styles.navBar}>
         <LinkDeskItems />
       </div>

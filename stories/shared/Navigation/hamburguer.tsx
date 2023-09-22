@@ -1,10 +1,10 @@
 "use client";
 
 // Styled Components
-import styles from "@/components/nav/style.module.scss";
+import styles from "./style.module.scss";
 
 // Local Functions
-import { moveUp } from "@/components/nav/utils";
+import { moveUp } from "./utils";
 
 /*--------------------------------------------------------------------*/
 

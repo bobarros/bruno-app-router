@@ -1,5 +1,4 @@
 // Next
-
 import Link from "next/link";
 
 // Styles
@@ -17,10 +16,7 @@ import LogoSVG from "@/svg/LogoSVG";
 export default function Logo() {
   return (
     <Link href="/" passHref>
-      <div className={styles.wrap}>
-        logo bob
-        <p className={styles.text}>.dev</p>
-        <p className={styles.overlay}>logo</p>
+      <div className={styles.wrap} aria-label="bruno's logo">
         <LogoSVG />
       </div>
     </Link>

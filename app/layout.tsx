@@ -8,8 +8,8 @@ import { libreBaskerville } from "./fonts";
 import { ReactNode } from "react";
 
 // Local Components
-import Footer from "@/components/footer";
-import Nav from "@/components/nav";
+import Footer from "@/stories/shared/Footer";
+import Navigation from "@/stories/shared/Navigation";
 
 /*--------------------------------------------------------------------*/
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={libreBaskerville.className}>
-        <Nav />
+        <Navigation />
         <main className="container-principal">{children}</main>
         <Footer />
       </body>

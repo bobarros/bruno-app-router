@@ -1,32 +1,30 @@
 "use client";
 
 // Next
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // React
-
 import { ReactNode } from "react";
 
 // Styled Components
-
-import styles from "@/components/nav/style.module.scss";
+import styles from "./style.module.scss";
 
 // Types
-
 type Props = {
   children?: ReactNode;
   href: string;
   className: string;
 };
 
-// Local Components
+// Local Functions
+import { moveUp } from "./utils";
 
-const LinkDesk = ({ href, children, className }: Props) => {
+// Local Components
+const LinkMobile = ({ href, children, className }: Props) => {
   return (
-    <li>
-      <Link className={className} href={href}>
+    <li className={styles.item} onClick={moveUp}>
+      <Link href={href} className={className}>
         {children}
       </Link>
     </li>
@@ -34,7 +32,7 @@ const LinkDesk = ({ href, children, className }: Props) => {
 };
 
 // Content
-import NAV_ITEMS from "@/components/nav/content";
+import NAV_ITEMS from "./content";
 
 /*--------------------------------------------------------------------*/
 
@@ -42,24 +40,24 @@ import NAV_ITEMS from "@/components/nav/content";
  * Component
  */
 
-const LinkDeskItems = () => {
+const LinkMobileItems = () => {
   const pathname = usePathname();
   return (
-    <ul className={styles.links}>
+    <ul className={styles.menuMobile}>
       {NAV_ITEMS.map((item, index) => {
         const { href, children } = item;
         return (
-          <LinkDesk
+          <LinkMobile
             key={index}
             className={pathname === href ? "underline" : ""}
             href={href}
           >
             {children}
-          </LinkDesk>
+          </LinkMobile>
         );
       })}
     </ul>
   );
 };
 
-export default LinkDeskItems;
+export default LinkMobileItems;
