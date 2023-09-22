@@ -1,4 +1,5 @@
 // Next
+import type { Metadata } from "next";
 import Image from "next/image";
 
 // Fonts
@@ -27,9 +28,33 @@ import PORTFOLIO_DATA from "@/content/portfolio";
  * Page
  */
 
+export const metadata: Metadata = {
+  title: "Bruno's Portfolio",
+  description: "Previous work that Bruno did.",
+  keywords: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Jamstack websites",
+    "Software engineer",
+    "Bruno Barros",
+    "Online interfaces",
+  ],
+  authors: [{ name: "Bruno Barros", url: "https://github.com/bobarros" }],
+  openGraph: {
+    type: "website",
+    url: "https://brunobarros.dev/portfolio",
+    title: "brunobarros.dev",
+    description: "Previous work that Bruno did.",
+    siteName: "brunobarros.dev",
+    images: [{ url: "/img/favicon.png", width: 128, height: 128 }],
+  },
+};
+
 export default function Portfolio() {
   return (
-    <section className={styles.wait} id="projetos">
+    <section className={styles.commonBlock} id="projetos">
       <div className={styles.skillsBlock}>
         <h1 className={`${styles.pageName} ${jetBrain.className}`}>
           Portfolio

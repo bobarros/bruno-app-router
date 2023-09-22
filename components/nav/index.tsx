@@ -41,7 +41,7 @@ const Nav = () => {
             <GitSVG />
           </a>
           <Hamburguer />
-          <a href="mailto:brunobarros@ideias.dev">
+          <a href="mailto:bobarros@gmail.com">
             email
             <EmailSVG />
           </a>
