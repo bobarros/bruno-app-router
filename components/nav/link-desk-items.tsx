@@ -34,7 +34,7 @@ const LinkDesk = ({ href, children, className }: Props) => {
 };
 
 // Content
-import NAV_ITEMS from "@/content/nav";
+import NAV_ITEMS from "@/components/nav/content";
 
 /*--------------------------------------------------------------------*/
 

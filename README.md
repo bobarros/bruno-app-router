@@ -12,7 +12,7 @@
 
 ## :rocket: Quick start
 
-**Run the site locally**
+**Run the site locally with a recomended Node version above 18**
 
 ### Step 1: Clone The Repo
 
@@ -50,19 +50,20 @@ After running the development server the site should be running on https://local
 
 A quick look at the folder structure of this project.
 
-    ├── pages
+    ├── app
+    ├── components
+         ├─── shared components or page name
+    ├── content
+         ├─── page name
     ├── public
          ├───fonts
          ├───img
          └───pdf
          └───svg
-    └── src
+    ├── styles
+         ├─── shared module styles
+    └── svg
         ├───components
-        ├───layouts
-        ├───pagesTrees
-        ├───sections
-        ├───styles
-        └───svg
 
 ## Tools Used
 
