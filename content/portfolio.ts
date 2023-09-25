@@ -65,7 +65,7 @@ const PORTFOLIO_DATA = [
     reference: "Thorge W.",
     referenceLink: "https://www.linkedin.com/in/thorgewandrei/",
   },
-  {
+ /*  {
     title: "The Beards - New Zealand",
     description: `I worked on fixes and implementations for the team. When I started, the project was already quite advanced. It was
     interesting to work with Lottie animations for the first time.`,
@@ -74,7 +74,7 @@ const PORTFOLIO_DATA = [
     stack: "Next.js, Sass, Lottie",
     reference: "Daniel Rojkind ",
     referenceLink: "https://www.linkedin.com/in/drojkind/",
-  },
+  }, */
   {
     title: "The Movement Empire - South Africa",
     description: `For this project, my initial responsibility was to complete the work that had
