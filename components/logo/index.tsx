@@ -16,7 +16,7 @@ import LogoSVG from "@/svg/LogoSVG";
 export default function Logo() {
   return (
     <Link href="/" passHref>
-      <div className={styles.wrap} aria-label="bruno's logo">
+      <div className={styles.wrap} aria-label="go to home page">
         <LogoSVG />
       </div>
     </Link>
