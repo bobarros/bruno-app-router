@@ -1,5 +1,5 @@
 const PORTFOLIO_DATA = [
-  {
+ /*  {
     title: "Enterprise Alumni - USA",
     description: `I worked as a full-time developer for EA for nearly two years. During my time there, my responsibilities included
      making improvements, fixing issues, and handling various daily tasks related to their app and customer onboarding process.
@@ -12,7 +12,7 @@ const PORTFOLIO_DATA = [
       "Next.js, Angular, Sass, Bootstrap, Material UI, Okta, Styled Componets and many others.",
     reference: "Emma Sinclair",
     referenceLink: "https://www.linkedin.com/in/ecsinclair/",
-  },
+  }, */
   {
     title: "Seus Hábitos - My Own",
     description: `A website created for content related to good habits, featuring a modern design and various functionalities
@@ -46,7 +46,7 @@ const PORTFOLIO_DATA = [
     reference: "Bruno Barros",
     referenceLink: "https://brunobarros.dev",
   },
-  {
+ /*  {
     title: "Next Idea Tech Revamp - USA",
     description: `Here, I was hired by Zak to implement his new website. He had a WordPress version
     and design ideas for a new version. I created this new version as he requested, using Next.js.`,
@@ -55,8 +55,8 @@ const PORTFOLIO_DATA = [
     stack: "Next.js, Styled Components, Sass",
     reference: "Zak Elmeghni",
     referenceLink: "https://www.linkedin.com/in/zak-elmeghni-a073b84/",
-  },
-  {
+  }, */
+  /* {
     title: "Bluplanet - Germany",
     description: `My participation here was limited to creating isolated components for the Bluplanet team.`,
     image: "/img/portfolio/bluplanet.png",
@@ -64,7 +64,7 @@ const PORTFOLIO_DATA = [
     stack: "Next.js, Styled Components",
     reference: "Thorge W.",
     referenceLink: "https://www.linkedin.com/in/thorgewandrei/",
-  },
+  }, */
  /*  {
     title: "The Beards - New Zealand",
     description: `I worked on fixes and implementations for the team. When I started, the project was already quite advanced. It was
@@ -75,7 +75,7 @@ const PORTFOLIO_DATA = [
     reference: "Daniel Rojkind ",
     referenceLink: "https://www.linkedin.com/in/drojkind/",
   }, */
-  {
+  /* {
     title: "The Movement Empire - South Africa",
     description: `For this project, my initial responsibility was to complete the work that had
     been abandoned by the previous developer. There were numerous issues that needed fixing, and I also had to complete the
@@ -85,7 +85,7 @@ const PORTFOLIO_DATA = [
     stack: "Next.js, Sass, Styled Componets",
     reference: "Bradley Zetler",
     referenceLink: "https://www.linkedin.com/in/bradley-zetler",
-  },
+  }, */
 ];
 
 export default PORTFOLIO_DATA;
