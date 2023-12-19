@@ -10,7 +10,7 @@
 
 ## :rocket: Quick start
 
-**Run the site locally with a recomended Node version above 18**
+**Run the site locally. I'm using Node v18.18.0
 
 ### Step 1: Clone The Repo
 
