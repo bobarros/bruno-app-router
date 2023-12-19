@@ -8,8 +8,6 @@
 
 ![Bruno Barros Site Preview](./public/img/web_demo.png)
 
-*Obs: If you are using this site or any of it's components for your own portfolio site, I would be very grateful if you could give some credits to me in your footer*
-
 ## :rocket: Quick start
 
 **Run the site locally with a recomended Node version above 18**
@@ -19,7 +17,7 @@
 Fork the repository. then clone the repo locally by doing -
 
 ```bash
-git clone https://github.com/bobarros/bruno-web.git
+git clone https://github.com/bobarros/bruno-app-router.git
 ```
 
 ### Step 2: Install Dependencies
@@ -52,18 +50,15 @@ A quick look at the folder structure of this project.
 
     ├── app
     ├── components
-         ├─── shared components or page name
-    ├── content
          ├─── page name
+    ├── content
     ├── public
          ├───fonts
          ├───img
          └───pdf
          └───svg
     ├── styles
-         ├─── shared module styles
     └── svg
-        ├───components
 
 ## Tools Used
 
